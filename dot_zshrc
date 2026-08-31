@@ -34,7 +34,7 @@ alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
-alias update='shelly -n'
+alias update='shelly upgrade standard -n; shelly upgrade flatpak -n; paru -Sua --noconfirm'
 alias pve='kitten ssh root@192.168.1.6'
 alias pva='kitten ssh root@192.168.1.229'
 alias zsh='nano .zshrc'
@@ -44,7 +44,7 @@ alias tteletrabajop='xfreerdp3 /f /u:cau /p:cauayesa /sound /microphone:format:1
 alias w11='xfreerdp3 /u:david /p:160619990d /v:192.168.1.68 /sound /microphone:format:1 /gdi:hw +gfx /gfx:AVC444:off /compression-level:2 +video /f /cert:tofu /multimon'
 alias sw11='xfreerdp3 /u:david /p:160619990d /v:192.168.1.68 /sound /microphone:format:1 /gdi:hw +gfx /gfx:AVC444:off /compression-level:2 +video /f /cert:tofu'
 alias vpn='sudo wg-quick up Portatil'
-
+alias youtube='ytsurf'
 
 
 
@@ -65,3 +65,13 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # Display Pokemon-colorscripts
 pokemon-colorscripts --no-title -r | fastfetch -c $HOME/.config/fastfetch/config.jsonc --logo-type file-raw --logo-height 10 --logo-width 5 --logo -
+
+# Created by `pipx` on 2026-07-17 18:17:56
+export PATH="$PATH:/home/david/.local/bin"
+
+# Added by LM Studio CLI tool (lms)
+export PATH="$PATH:/home/david/.lmstudio/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
